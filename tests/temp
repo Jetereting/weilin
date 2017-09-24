@@ -1,0 +1,20 @@
+var signid = getSha1("A6935352648280");
+var signname = getSha1("test");//这里我写死了 苏潇潇
+function getPullUpSubList() {
+    var tag = getCurTag()
+    var url = $api.getStorage('wx_web_service');
+    api.ajax({
+        //url : 'http://172.104.68.114/api/db.php',
+        url : url,
+        dataType:'json',
+        method : 'get',
+        data : {
+            values : {
+						'signid':signid,//加密验证id  苏潇潇
+						'signname':signname,//加密验证name
+						'tbname':"contentlist",//查询的表名   typeid16   contentlist
+						'cols':"id,tag,contentlist,valid,timestamp",//查询字段  例如查询id,contentlist
+						'where':'valid='+tag.toString()
+					}
+        }
+    }, function(ret, err) {
