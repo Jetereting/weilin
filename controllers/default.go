@@ -5,6 +5,7 @@ import (
 	"weilin/mysqlUtility"
 	"crypto/sha1"
 	"fmt"
+	"weilin/mysqlUtility/dal"
 )
 
 type MainController struct {
@@ -12,6 +13,7 @@ type MainController struct {
 }
 
 func (c *MainController) Get() {
+
 	signid := sha1.New()
 	signid.Write([]byte(beego.AppConfig.String("sha1::signid")))
 	signid1:=signid.Sum(nil)
@@ -30,9 +32,14 @@ func (c *MainController) Get() {
 		return
 	}
 
-	sql:="select * from "+c.GetString("Table")+" WHERE "+c.GetString("Column")+" = '"+c.GetString("Value")+"'"
-	beego.Info(sql)
-	data,_:=mysqlUtility.DContext.QueryData(sql)
+	entity := dal.NewEntity(c.GetString("tbname"), "QP")
+	entity["PageSize"] = c.GetString("PageSize")
+	entity["PageIndex"] = c.GetString("PageIndex")
+	entity["FieldsSelect"] = c.GetString("cols")
+	entity["Condition"] = fmt.Sprintf("where %s", c.GetString("where"))
+
+	data, _ := mysqlUtility.DContext.QueryPager(entity)
+
 	c.Data["json"] = data
 	c.ServeJSON()
 }

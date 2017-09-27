@@ -1,17 +1,49 @@
 <component name="libraryTable">
   <library name="GOPATH &lt;weilin&gt;">
     <CLASSES>
+      <root url="file://$PROJECT_DIR$/../antServer" />
       <root url="file://$PROJECT_DIR$/../qiniupkg.com" />
-      <root url="file://$PROJECT_DIR$/../hello" />
       <root url="file://$PROJECT_DIR$/../AntLinkCampus" />
+      <root url="file://$PROJECT_DIR$/../gopkg.in" />
+      <root url="file://$PROJECT_DIR$/../AssessmentTable" />
+      <root url="file://$PROJECT_DIR$/../jssdk-doc" />
+      <root url="file://$PROJECT_DIR$/../ant-doc" />
+      <root url="file://$PROJECT_DIR$/../qiniuTest" />
+      <root url="file://$PROJECT_DIR$/../labix.org" />
+      <root url="file://$PROJECT_DIR$/../MongoDB_CURD" />
       <root url="file://$PROJECT_DIR$/../github.com" />
+      <root url="file://$PROJECT_DIR$/../crawler" />
+      <root url="file://$PROJECT_DIR$/../beegoAutoDoc" />
+      <root url="file://$PROJECT_DIR$/../hosts" />
+      <root url="file://$PROJECT_DIR$/../golang.org" />
+      <root url="file://$PROJECT_DIR$/../git.oschina.net" />
+      <root url="file://$PROJECT_DIR$/../points" />
+      <root url="file://$PROJECT_DIR$/../cetUpdate" />
+      <root url="file://$PROJECT_DIR$/../helloApi" />
+      <root url="file://$PROJECT_DIR$/../angular-webapp" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
+      <root url="file://$PROJECT_DIR$/../antServer" />
       <root url="file://$PROJECT_DIR$/../qiniupkg.com" />
-      <root url="file://$PROJECT_DIR$/../hello" />
       <root url="file://$PROJECT_DIR$/../AntLinkCampus" />
+      <root url="file://$PROJECT_DIR$/../gopkg.in" />
+      <root url="file://$PROJECT_DIR$/../AssessmentTable" />
+      <root url="file://$PROJECT_DIR$/../jssdk-doc" />
+      <root url="file://$PROJECT_DIR$/../ant-doc" />
+      <root url="file://$PROJECT_DIR$/../qiniuTest" />
+      <root url="file://$PROJECT_DIR$/../labix.org" />
+      <root url="file://$PROJECT_DIR$/../MongoDB_CURD" />
       <root url="file://$PROJECT_DIR$/../github.com" />
+      <root url="file://$PROJECT_DIR$/../crawler" />
+      <root url="file://$PROJECT_DIR$/../beegoAutoDoc" />
+      <root url="file://$PROJECT_DIR$/../hosts" />
+      <root url="file://$PROJECT_DIR$/../golang.org" />
+      <root url="file://$PROJECT_DIR$/../git.oschina.net" />
+      <root url="file://$PROJECT_DIR$/../points" />
+      <root url="file://$PROJECT_DIR$/../cetUpdate" />
+      <root url="file://$PROJECT_DIR$/../helloApi" />
+      <root url="file://$PROJECT_DIR$/../angular-webapp" />
     </SOURCES>
     <excluded>
       <root url="file://$PROJECT_DIR$" />
